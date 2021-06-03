@@ -1,0 +1,5 @@
+/home/agata/Documents/mp4/build/CMakeFiles/rebuild_cache.dir
+/home/agata/Documents/mp4/build/CMakeFiles/edit_cache.dir
+/home/agata/Documents/mp4/build/CMakeFiles/tests.dir
+/home/agata/Documents/mp4/build/CMakeFiles/mp4.dir
+/home/agata/Documents/mp4/build/CMakeFiles/mp4_src.dir

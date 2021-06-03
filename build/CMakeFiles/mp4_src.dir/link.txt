@@ -1,0 +1,2 @@
+/usr/bin/ar qc lib/libmp4_src.a  CMakeFiles/mp4_src.dir/src/rational.cpp.o
+/usr/bin/ranlib lib/libmp4_src.a

@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/agata/Documents/mp4/src/rational.cpp
+iostream
+-
+rational.h
+/home/agata/Documents/mp4/src/rational.h
+
+/home/agata/Documents/mp4/src/rational.h
+iostream
+-
+cmath
+-
+exception
+-
+

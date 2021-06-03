@@ -1,0 +1,1 @@
+/usr/bin/c++         CMakeFiles/tests.dir/tests/main.cpp.o CMakeFiles/tests.dir/tests/ts1.cpp.o  -o bin/tests   -L/home/agata/gtest/1.8.1/_/_/package/e019a06362b932ca5d1b082b6c112aa150c88de4/lib  -Wl,-rpath,/home/agata/gtest/1.8.1/_/_/package/e019a06362b932ca5d1b082b6c112aa150c88de4/lib lib/libmp4_src.a -lgtest_main -lgmock_main -lgmock -lgtest -lpthread 
