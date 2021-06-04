@@ -55,7 +55,7 @@ std::ostream& operator<<(std::ostream& os, const Rational& other) // wyświetlan
 	return os;
 }
 
-std::istream& operator>>(std::istream& is, const Rational& other) // przyjęcie do programu ułamka w postaci wymiernej
+std::istream& operator>>(std::istream& is, Rational& other) // przyjęcie do programu ułamka w postaci wymiernej
 {
 
 	cout<<"numerator = ";
