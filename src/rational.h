@@ -75,7 +75,7 @@ private:
 	void initialize(int numerator, int denominator);
 
 	friend std::ostream& operator<<(std::ostream& os, const Rational& other);
-	friend std::istream& operator>>(std::istream& is, const Rational& other);
+	friend std::istream& operator>>(std::istream& is, Rational& other);
 	
 };
 	Rational operator+(const Rational& r, int i);
