@@ -1,30 +1,6 @@
 #include <gtest/gtest.h>
 #include "../src/rational.h"
 
-TEST(TS1, normalize) {
-    Rational v1 = Rational::normalize(Rational(3,33));
-    EXPECT_EQ(1,v1.numerator());
-    EXPECT_EQ(11,v1.denominator());
-
-    Rational v2 = Rational::normalize(Rational(-5,20));
-    EXPECT_EQ(-1,v2.numerator());
-    EXPECT_EQ(4,v2.denominator());
-}
-
-TEST(TS1, create_rational) {
-    Rational v1(3,6);
-    EXPECT_EQ(v1.numerator(), 3);
-    EXPECT_EQ(v1.denominator(), 6);
-    
-    EXPECT_EQ(Rational(1,3), Rational(1,3));
-    
-    //Rational v2(3,6);
-    //EXPECT_EQ(v2.numerator(), 1);
-    //EXPECT_EQ(v2.denominator(), 2);
-
-    EXPECT_THROW(Rational(3,0), MyException);
-}
-
 TEST(TS1, add_two_rationals) {
     EXPECT_EQ(Rational(1,1),Rational(1,2)+Rational(1,2));
     EXPECT_EQ(Rational(5,1),Rational(3,2)+Rational(7,2));
@@ -93,24 +69,27 @@ TEST(TS1, lesser) {
     EXPECT_FALSE(Rational(2,3)<Rational(2,3));
     }
 
-/*
 
+TEST(TS1, normalize) {
+    Rational v1 = Rational::normalize(Rational(3,33));
+    EXPECT_EQ(1,v1.numerator());
+    EXPECT_EQ(11,v1.denominator());
 
-
-
-TEST(TS1, testB) {
-    //ASSERT_EQ(3, add(1,2));
-    //EXPECT_EQ(18.0, square(324.0));
-    EXPECT_EQ(Rational(-5,33),Rational(2,11)+Rational(1,-3));
-    //EXPECT_EQ(Rational(3,1),3); 
-    }
-
-TEST(TS1, testG) {
-    //ASSERT_EQ(3, add(1,2));
-    //EXPECT_EQ(18.0, square(324.0));
-    //EXPECT_EQ(Rational(3,1),3);
-    Rational r(2,1);
-    EXPECT_EQ(r.numerator(), 2);
-    EXPECT_EQ(r.denominator(),1);
+    Rational v2 = Rational::normalize(Rational(-5,20));
+    EXPECT_EQ(-1,v2.numerator());
+    EXPECT_EQ(4,v2.denominator());
 }
-*/
+
+TEST(TS1, create_rational) {
+    Rational v1(3,6);
+    EXPECT_EQ(v1.numerator(), 3);
+    EXPECT_EQ(v1.denominator(), 6);
+    
+    EXPECT_EQ(Rational(1,3), Rational(1,3));
+    
+    //Rational v2(3,6);
+    //EXPECT_EQ(v2.numerator(), 1);
+    //EXPECT_EQ(v2.denominator(), 2);
+
+    EXPECT_THROW(Rational(3,0), MyException);
+}
